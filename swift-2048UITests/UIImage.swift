@@ -5,7 +5,9 @@
 //  Created by a.alterpesotskiy on 19/04/2019.
 //  Copyright © 2019 Austin Zheng. All rights reserved.
 //
+
 import UIKit
+import XCTest
 
 extension UIImage {
     
@@ -34,5 +36,22 @@ extension UIImage {
         }
         
         return nil
+    }
+    
+    func fill(element: XCUIElement) -> UIImage {
+        UIGraphicsBeginImageContext(self.size)
+        self.draw(at: CGPoint.zero)
+        let context = UIGraphicsGetCurrentContext()!
+        context.fill(
+            CGRect(
+                x: element.frame.minX,
+                y: element.frame.minY,
+                width: element.frame.size.width,
+                height: element.frame.size.height
+            )
+        )
+        let myImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return myImage!
     }
 }

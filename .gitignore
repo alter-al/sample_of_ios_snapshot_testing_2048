@@ -21,3 +21,8 @@ DerivedData
 
 #CocoaPods
 Pods
+
+# Other
+*.lock
+report.xml
+test_output

@@ -13,7 +13,7 @@ class SnapshotUITests: FBSnapshotTestCase {
 
     override func setUp() {
         super.setUp()
-        recordMode = true
+        recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"] == "true"
         fileNameOptions = [
             FBSnapshotTestCaseFileNameIncludeOption.OS,
             FBSnapshotTestCaseFileNameIncludeOption.screenScale
@@ -27,15 +27,23 @@ class SnapshotUITests: FBSnapshotTestCase {
     }
     
     func test_Snapshot() {
-        XCUIApplication().buttons["startGame"].tap()
-        let element = XCUIApplication().otherElements["board"].screenshot().image
-        let fullscreen = XCUIApplication().screenshot().image.removingStatusBar
+        let startGameBtn = XCUIApplication().buttons["startGame"]
+        let score = XCUIApplication().staticTexts["score"]
+        let board = XCUIApplication().otherElements["board"]
+        
+        startGameBtn.tap()
+        let scoreImage = score.screenshot().image
+        let fullscreen = XCUIApplication()
+                                        .screenshot()
+                                        .image
+                                        .fill(element: board)
+                                        .removingStatusBar
         
         FBSnapshotVerifyView(UIImageView(image: fullscreen),
                              identifier: "fullscreen",
                              perPixelTolerance: 0.1)
-        FBSnapshotVerifyView(UIImageView(image: element),
-                             identifier: "board",
+        FBSnapshotVerifyView(UIImageView(image: scoreImage),
+                             identifier: "score",
                              overallTolerance: 0.01)
     }
 

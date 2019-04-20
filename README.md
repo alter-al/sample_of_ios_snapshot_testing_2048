@@ -1,12 +1,25 @@
-Core
+Purpose
 ------------
 
 I took an app [iOS-2048](https://github.com/austinzheng/iOS-2048) as a sample to show how iOSSnapshotTestCase works.
 
-Precondition
+Prerequisites
 ------------
 
+#### Fastlane
+    $ gem install fastlane
+    
+#### Pods
     $ pod install
+    
+Usage
+------------
+
+#### Recording tests
+    $ fastlane test record:true
+
+#### Executing tests
+    $ fastlane test
 
 License
 -------

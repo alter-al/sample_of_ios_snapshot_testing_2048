@@ -88,6 +88,11 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+            key = "RECORD_MODE"
+            value = "$(RECORD_MODE)"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "IMAGE_DIFF_DIR"
             value = "$(SOURCE_ROOT)/Snapshots/FailureDiffs"
             isEnabled = "YES">

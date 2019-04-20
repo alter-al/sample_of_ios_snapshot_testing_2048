@@ -31,6 +31,7 @@ class ScoreView : UIView, ScoreViewProtocol {
     label.textColor = tcolor
     label.font = font
     layer.cornerRadius = r
+    label.accessibilityIdentifier = "score"
     self.addSubview(label)
   }
 
