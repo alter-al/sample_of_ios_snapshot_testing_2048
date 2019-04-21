@@ -40,7 +40,7 @@ class NumberTileGameViewController : UIViewController, GameModelProtocol {
     threshold = t > 8 ? t : 8
     super.init(nibName: nil, bundle: nil)
     model = GameModel(dimension: dimension, threshold: threshold, delegate: self)
-    view.backgroundColor = UIColor.white
+    view.backgroundColor = UIColor(red:0.85, green:0.80, blue:0.55, alpha:1.0)
     setupSwipeControls()
   }
 

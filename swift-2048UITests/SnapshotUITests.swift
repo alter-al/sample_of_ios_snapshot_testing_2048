@@ -32,6 +32,7 @@ class SnapshotUITests: FBSnapshotTestCase {
         let board = XCUIApplication().otherElements["board"]
         
         startGameBtn.tap()
+        sleep(1) // in XCUITest we haven't usesDrawViewHierarchyInRect
         let scoreImage = score.screenshot().image
         let fullscreen = XCUIApplication()
                                         .screenshot()
