@@ -26,14 +26,12 @@ class SnapshotUnitTests: FBSnapshotTestCase {
         let game = NumberTileGameViewController(dimension: 4, threshold: 2048)
         game.board?.reset()
         game.board?.insertTile(at: (1, 1), value: 2)
-        (game.view.subviews.last! as! ScoreView).label.text
-            = "This is a really long text and should overflow"
+        (game.view.subviews.last! as! ScoreView).label.text = "12345678"
         
         FBSnapshotVerifyView(game.view, identifier: "wholeView")
         FBSnapshotVerifyView(game.board!, identifier: "boardView")
         FBSnapshotVerifyLayer(game.board!.layer, identifier: "boardLayer")
-        FBSnapshotVerifyLayer((game.view.layer.sublayers?.last)!,
-                              identifier: "scoreSublayer")
+        FBSnapshotVerifyLayer((game.view.layer.sublayers?.last)!, identifier: "scoreSublayer")
     }
     
 }
