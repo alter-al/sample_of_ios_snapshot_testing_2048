@@ -23,8 +23,10 @@
 		2FCCC2A956D645765DB0AB34 /* Pods_swift_2048Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB599A9FC600B06D149200E /* Pods_swift_2048Tests.framework */; };
 		634B09BB226A66FD003EA6E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B09BA226A66FD003EA6E5 /* UIImage.swift */; };
 		634B09BD226A6764003EA6E5 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B09BC226A6764003EA6E5 /* UIDevice.swift */; };
-		6375F055226A621700D36B0C /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375F054226A621700D36B0C /* SnapshotUITests.swift */; };
-		63B6F843226A633C00B18F9B /* SnapshotUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6F842226A633C00B18F9B /* SnapshotUnitTests.swift */; };
+		6375F055226A621700D36B0C /* SnapshotUITests_FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375F054226A621700D36B0C /* SnapshotUITests_FB.swift */; };
+		63B6F843226A633C00B18F9B /* SnapshotUnitTests_FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6F842226A633C00B18F9B /* SnapshotUnitTests_FB.swift */; };
+		E1C24712232E59060070BE98 /* SnapshotUnitTests_PF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C24711232E59060070BE98 /* SnapshotUnitTests_PF.swift */; };
+		E1C24714232E5F1C0070BE98 /* SnapshotUITests_PF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C24713232E5F1C0070BE98 /* SnapshotUITests_PF.swift */; };
 		FC1B9AEAECF8C4DEC60D8850 /* Pods_swift_2048.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4277C1374AE9EDE69C931C8B /* Pods_swift_2048.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,15 +77,17 @@
 		634B09BA226A66FD003EA6E5 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		634B09BC226A6764003EA6E5 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		6375F052226A621700D36B0C /* swift-2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-2048UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6375F054226A621700D36B0C /* SnapshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUITests.swift; sourceTree = "<group>"; };
+		6375F054226A621700D36B0C /* SnapshotUITests_FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUITests_FB.swift; sourceTree = "<group>"; };
 		6375F056226A621700D36B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63B6F842226A633C00B18F9B /* SnapshotUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUnitTests.swift; sourceTree = "<group>"; };
+		63B6F842226A633C00B18F9B /* SnapshotUnitTests_FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUnitTests_FB.swift; sourceTree = "<group>"; };
 		666DB9EDBB52EA672B19A8A3 /* Pods-swift-2048Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A6706176DD1E024AA49FB12 /* Pods-swift-2048UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048UITests/Pods-swift-2048UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BB599A9FC600B06D149200E /* Pods_swift_2048Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_2048Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8968E388379C5647A52830C3 /* Pods-swift-2048Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AF1403259B531A09F6976D8A /* Pods-swift-2048UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048UITests/Pods-swift-2048UITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6BDABFA96D563FAFD6219D5 /* Pods-swift-2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048/Pods-swift-2048.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C24711232E59060070BE98 /* SnapshotUnitTests_PF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUnitTests_PF.swift; sourceTree = "<group>"; };
+		E1C24713232E5F1C0070BE98 /* SnapshotUITests_PF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUITests_PF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				1AC563F3193DCE6000402286 /* Supporting Files */,
-				63B6F842226A633C00B18F9B /* SnapshotUnitTests.swift */,
+				63B6F842226A633C00B18F9B /* SnapshotUnitTests_FB.swift */,
+				E1C24711232E59060070BE98 /* SnapshotUnitTests_PF.swift */,
 			);
 			path = "swift-2048Tests";
 			sourceTree = "<group>";
@@ -213,7 +218,8 @@
 		6375F053226A621700D36B0C /* swift-2048UITests */ = {
 			isa = PBXGroup;
 			children = (
-				6375F054226A621700D36B0C /* SnapshotUITests.swift */,
+				6375F054226A621700D36B0C /* SnapshotUITests_FB.swift */,
+				E1C24713232E5F1C0070BE98 /* SnapshotUITests_PF.swift */,
 				6375F056226A621700D36B0C /* Info.plist */,
 				634B09BA226A66FD003EA6E5 /* UIImage.swift */,
 				634B09BC226A6764003EA6E5 /* UIDevice.swift */,
@@ -324,6 +330,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -372,21 +379,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		172BE7DC6B60A7FE44C8678B /* [CP] Check Pods Manifest.lock */ = {
@@ -438,21 +443,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-swift-2048UITests/Pods-swift-2048UITests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-swift-2048UITests/Pods-swift-2048UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-2048UITests/Pods-swift-2048UITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swift-2048UITests/Pods-swift-2048UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE12C0542880E5F3D4C86DDC /* [CP] Check Pods Manifest.lock */ = {
@@ -500,7 +503,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B6F843226A633C00B18F9B /* SnapshotUnitTests.swift in Sources */,
+				63B6F843226A633C00B18F9B /* SnapshotUnitTests_FB.swift in Sources */,
+				E1C24712232E59060070BE98 /* SnapshotUnitTests_PF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +512,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6375F055226A621700D36B0C /* SnapshotUITests.swift in Sources */,
+				6375F055226A621700D36B0C /* SnapshotUITests_FB.swift in Sources */,
+				E1C24714232E5F1C0070BE98 /* SnapshotUITests_PF.swift in Sources */,
 				634B09BD226A6764003EA6E5 /* UIDevice.swift in Sources */,
 				634B09BB226A66FD003EA6E5 /* UIImage.swift in Sources */,
 			);
@@ -690,7 +695,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "f3nghuang.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -706,7 +711,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "f3nghuang.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -735,7 +740,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.my.sample.swift-2048UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "swift-2048";
 			};
@@ -765,7 +770,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.my.sample.swift-2048UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "swift-2048";
 			};

@@ -1,5 +1,5 @@
 //
-//  SnapshotUnitTests.swift
+//  SnapshotUnitTests_FB.swift
 //  swift-2048Tests
 //
 //  Created by a.alterpesotskiy on 19/04/2019.
@@ -10,11 +10,15 @@ import XCTest
 import FBSnapshotTestCase
 @testable import swift_2048
 
-class SnapshotUnitTests: FBSnapshotTestCase {
+class SnapshotFB: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
         recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"] == "true"
+        fileNameOptions = [
+            FBSnapshotTestCaseFileNameIncludeOption.OS,
+            FBSnapshotTestCaseFileNameIncludeOption.screenScale
+        ]
         continueAfterFailure = true
     }
     

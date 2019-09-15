@@ -1,5 +1,5 @@
 //
-//  SnapshotUITests.swift
+//  SnapshotUITests_FB.swift
 //  snapshotUITests
 //
 //  Created by a.alterpesotskiy on 19/04/2019.
@@ -9,7 +9,7 @@
 import XCTest
 import FBSnapshotTestCase
 
-class SnapshotUITests: FBSnapshotTestCase {
+class SnapshotFBUI: FBSnapshotTestCase {
 
     override func setUp() {
         super.setUp()

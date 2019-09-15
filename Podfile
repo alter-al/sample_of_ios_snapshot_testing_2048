@@ -8,11 +8,13 @@ target 'swift-2048' do
   target 'swift-2048Tests' do
     inherit! :search_paths
     pod 'iOSSnapshotTestCase', '~> 6.0.0'
+    pod 'SnapshotTesting', '~> 1.5'
   end
 
   target 'swift-2048UITests' do
     inherit! :search_paths
     pod 'iOSSnapshotTestCase', '~> 6.0.0'
+    pod 'SnapshotTesting', '~> 1.5'
   end
 end
 

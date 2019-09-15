@@ -1,7 +1,7 @@
 Purpose
 ------------
 
-I took an app [iOS-2048](https://github.com/austinzheng/swift-2048) as a sample to show how [iOSSnapshotTestCase](https://github.com/uber/ios-snapshot-test-case) works.
+I took an app [iOS-2048](https://github.com/austinzheng/swift-2048) as a sample to show how [iOSSnapshotTestCase](https://github.com/uber/ios-snapshot-test-case) and [SwiftSnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing) work.
 
 Prerequisites
 ------------
